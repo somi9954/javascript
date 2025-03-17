@@ -17,5 +17,5 @@ if (coffee.includes("hot")) {
 
 //3. 유저에게 단어를 입력받고, 소문자면 대문자화, 대문자면 소문자화 하기
 const str = prompt("단어를 입력하세요");
-const q3 = str == str.toUpperCase() ? str.toLowerCase() : str.toLocaleUpperCase();
+const q3 = str == str.toUpperCase() ? str.toLowerCase() : str.toUpperCase();
 console.log(q3);
