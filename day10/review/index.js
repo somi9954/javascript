@@ -26,4 +26,3 @@ colors.forEach((x) => {
 //2.태그안에 내용 채우기 element
 //3.태그의 스타일 꾸미기 element.style.background
 //4. 태그를 바디에 나내기
-타
