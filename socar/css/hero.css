@@ -1,0 +1,8 @@
+.hero {
+    height: 100vh;
+    background-image: url("../photo/main_visual_fullscreen.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
