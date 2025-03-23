@@ -17,6 +17,8 @@
   position: absolute;
   top: 0px;
   right: -10%;
+  transform: skew(-30deg) translateX(500px);
+  transition: all 1s;
 }
 
 .banner > .contents > h2 {

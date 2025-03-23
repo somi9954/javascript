@@ -8,11 +8,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: skew(-30deg) translateX(50px);
+  transform: skew(-30deg) translateX(500px);
   position: fixed;
   bottom: 0px;
   right: 0px;
   z-index: 1;
+
+  animation-name: leftMove;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
 .download > .logo {
@@ -33,4 +38,26 @@
 }
 .download > span {
   transform: skew(30deg);
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes leftMove {
+  0% {
+    transform: skew(-30deg) translateX(500px);
+  }
+  100% {
+    transform: skew(-30deg) translateX(50px);
+  }
 }

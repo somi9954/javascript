@@ -28,3 +28,43 @@ hamburger.addEventListener("click", () => {
   upbar.classList.toggle("upbarX");
   downbar.classList.toggle("downbarX");
 });
+
+window.addEventListener("wheel", (e) => {
+  if (e.deltaY > 0) {
+    header.classList.add("onHidden");
+    header.classList.remove("onShow");
+  } else {
+    header.classList.add("onShow");
+    header.classList.remove("onHidden");
+  }
+});
+
+const ob = new IntersectionObserver((entries) => {
+  entries.forEach((v) => {
+    if (v.isIntersecting) {
+      v.target.style.opacity = "1";
+      v.target.style.transform = "translateX(0px)";
+    }
+  });
+});
+
+const a = document.querySelectorAll(".concept__card > h2");
+const b = document.querySelectorAll(".concept__card > p");
+const c = document.querySelectorAll(".concept__card > .photo");
+
+a.forEach((v) => ob.observe(v));
+b.forEach((v) => ob.observe(v));
+c.forEach((v) => ob.observe(v));
+
+const banner = document.querySelector(".banner");
+const skewer = document.querySelector(".skewer");
+
+const ob1 = new IntersectionObserver((entries) => {
+  entries.forEach((v) => {
+    if (v.isIntersecting) {
+      skewer.style.transform = "skew(-30deg) translateX(0px)";
+    }
+  });
+});
+
+ob1.observe(banner);

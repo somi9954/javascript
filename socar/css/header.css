@@ -52,3 +52,11 @@ header > .hamburger > .downbarX {
   transform: rotate(45deg);
   left: 0px;
 }
+
+.onShow {
+  transform: translateY(0px);
+}
+
+.onHidden {
+  transform: translateY(-70px);
+}
