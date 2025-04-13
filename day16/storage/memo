@@ -1,0 +1,35 @@
+// 스토리지는 문자열만 저장됨
+// //  localStorage.setItem("coffee","latte")
+// // localStorage.setItem("cookie", "strawberry");
+// //localStorage.setItem("bread", JSON.stringify(["salt", "melon"]))
+// // localStorage.setItem("menu" , JSON.stringify({ name: "아메리카노", price: 2500}));
+// /* const a = localStorage.getItem("menu");
+// const b = JSON.parse(a);
+
+// console.log(a);
+// console.log(a); */
+
+// const a = localStorage.getItem("bread");
+// const b = JSON.parse(a);
+
+// const ul = document.createElement("ul");
+
+// b.forEach((v) => {
+//   const li = document.createElement("li");
+//   li.innerText = v;
+//   ul.appendChild(li);
+// });
+// document.body.appendChild(ul);
+
+// /* const a = localStorage.getItem("bread");
+// alert(a);
+//  */
+
+// /* const menu = { name: "아메리카노", price: 2500};
+// localStorage.setItem("menu", menu); */
+
+// //{ name: "아메리카노", price: 2500}
+
+
+// // 1. 스토리지에서 데이터 가져오기 task에 프롭스 뿌리기
+// // 2. Schedule > tasks ui 만들기
